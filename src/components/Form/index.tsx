@@ -30,7 +30,7 @@ const Form = () => {
                     required
                 />
             </div>
-            <Button />
+            <Button>Banana</Button>           
         </form>
     )
 }

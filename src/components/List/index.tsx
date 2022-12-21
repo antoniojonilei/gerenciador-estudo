@@ -1,3 +1,4 @@
+import Item from "./Item"
 import style from "./List.module.scss"
 
 const List = () => {
@@ -10,6 +11,9 @@ const List = () => {
     }, {
         tarefa: "typescript",
         tempo: "02:10:00"
+    }, {
+        tarefa: "NodeJs",
+        tempo: "00:45:00"
     }]
 
     return(
@@ -18,10 +22,10 @@ const List = () => {
             <ul>
 
                 {tarefas.map((item, index) => (
-                    <li className={style.item} key={index}>
-                        <h3> {item.tarefa} </h3>
-                        <span> {item.tempo} </span>
-                    </li>
+                    <Item
+                        key={index}
+                        {...item}   
+                    />
                 ))}  
 
             </ul>
