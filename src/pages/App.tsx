@@ -6,13 +6,11 @@ import style from "./App.module.scss"
 function App() {
   return (
     <div className={style.AppStyle}>
-      <div className={style.formWrapper}>
-        <Form />
-        <Stopwatch />
-      </div>
-      <div className={style.cardWrapper}>
-        <List />
-      </div>
+        <div>
+          <Form />
+          <Stopwatch />
+        </div>     
+        <List />     
     </div>
   );
 }
